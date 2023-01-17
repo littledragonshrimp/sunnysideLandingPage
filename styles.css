@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@300;400;700;800&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&family=Outfit:wght@300;400;600&family=Poppins:wght@400;500;600;700&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@300;400;700;800&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&family=Outfit:wght@300;400;600&family=Poppins:wght@400;500;600;700&family=Roboto:wght@700&display=swap");
+* {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body ::-webkit-scrollbar,
+body .nav-links {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+h1, h2, h3, h4 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+header {
+  background-image: url("images/mobile/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40rem;
+  max-height: 100%;
+  text-align: center;
+  background-color: #3ebfff;
+}
+
+nav {
+  position: relative;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  list-style: none;
+}
+nav a {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: hsl(232deg, 10%, 55%);
+  line-height: 2rem;
+}
+nav ul {
+  list-style: none;
+}
+
+.contact {
+  display: inline-block;
+  border-radius: 1rem;
+  background-color: hsl(51deg, 100%, 49%);
+  color: hsl(212deg, 27%, 19%);
+  font-family: "Fraunces", sans-serif;
+  text-transform: uppercase;
+  padding: 0.9rem 1.5rem;
+  font-weight: 900;
+  font-size: 0.9rem;
+  margin-right: 0.4rem;
+}
+
+.nav-links.shown {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: hsl(0deg, 0%, 100%);
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+}
+
+.nav-links.shown::after {
+  content: "";
+  position: absolute;
+  margin-top: -25%;
+  right: 0;
+  width: 0;
+  height: 0;
+  transform: translate(0, 10%);
+  background-color: transparent;
+  border-left: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-top: 40px solid transparent;
+  border-right: 40px solid hsl(0deg, 0%, 100%);
+}
+
+.logo {
+  max-width: 100%;
+}
+
+.fa-bars {
+  cursor: pointer;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.6rem;
+  height: 2rem;
+  width: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  padding: 4rem 0;
+  font-weight: 900;
+  letter-spacing: 0.6rem;
+}
+
+.arrow-img {
+  margin: 0 auto;
+  margin-top: 1rem;
+  height: 15%;
+  width: 1.5rem;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=styles.css.map */
