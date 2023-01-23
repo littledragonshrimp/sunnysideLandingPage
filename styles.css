@@ -230,11 +230,15 @@ h1 {
 }
 
 .testimonials {
+  margin-top: 26rem;
+  margin-bottom: 8rem;
   text-align: center;
 }
 .testimonials h3 {
   color: hsl(210deg, 4%, 67%);
-  font-size: 1.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
 }
 
 .profiles {
@@ -243,27 +247,94 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-.profiles .review {
+.profiles .review, .profiles .author-job {
   font-family: "barlow", sans-serif;
   margin: auto;
-  color: hsl(232deg, 10%, 55%);
-  line-height: 1.4rem;
+  color: hsl(213deg, 9%, 39%);
+  line-height: 1.9rem;
   max-width: 80%;
 }
 .profiles .author {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   font-size: 1.2rem;
   font-weight: 700;
 }
+.profiles .author-job {
+  font-size: 0.8rem;
+  color: hsl(232deg, 10%, 55%);
+}
 .profiles img {
   margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 1.4rem;
   border-radius: 50%;
 }
 
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 50rem;
+  width: 100%;
+}
+
+.milk {
+  background-image: url("images/mobile/image-gallery-milkbottles.jpg");
+}
+
+.orange {
+  background-image: url("images/mobile/image-gallery-orange.jpg");
+}
+
+.cone {
+  background-image: url("images/mobile/image-gallery-cone.jpg");
+}
+
+.sugar {
+  background-image: url("images/mobile/image-gallery-sugar-cubes.jpg");
+}
+
+.milk, .orange, .cone, .sugar {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #8ed0c4;
+  height: 10rem;
+}
 footer .attribution {
   font-size: 11px;
   text-align: center;
 }
 footer .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+footer .logo {
+  margin-top: 3rem;
+}
+
+.footer-links, .social-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 2rem;
+  list-style: none;
+  font-family: "barlow", sans-serif;
+}
+.footer-links a, .social-links a {
+  text-decoration: none;
+  color: hsl(168deg, 34%, 41%);
+}
+.footer-links a:hover, .social-links a:hover {
+  color: white;
+  transition: 0.5s;
 }/*# sourceMappingURL=styles.css.map */
