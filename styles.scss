@@ -241,15 +241,49 @@ h1 {
     align-items: center;
     justify-content: center;
     height: 33rem;
-    margin-top: 22rem;
-
     section{
         text-align: center;
     }
 }
 
+.section-3{
+    min-width: 50%;
+    min-height: 33rem;
+    margin-top: 13rem;
+}
 
+.testimonials{
+    text-align: center;
+    h3{
+        color: $lightgray;
+        font-size: 1.5rem;
+    }
+}
 
+.profiles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .review{
+        font-family: "barlow", sans-serif;
+        margin: auto;
+        color: $gray;
+        line-height: 1.4rem;
+        max-width: 80%;
+    }
+    .author{
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+
+    }
+    img{
+        margin: auto;
+        border-radius: 50%;
+    }
+
+}
 
 footer{
       .attribution { font-size: 11px; text-align: center; }

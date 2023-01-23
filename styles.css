@@ -218,10 +218,46 @@ h1 {
   align-items: center;
   justify-content: center;
   height: 33rem;
-  margin-top: 22rem;
 }
 .graphic-and-photography section {
   text-align: center;
+}
+
+.section-3 {
+  min-width: 50%;
+  min-height: 33rem;
+  margin-top: 13rem;
+}
+
+.testimonials {
+  text-align: center;
+}
+.testimonials h3 {
+  color: hsl(210deg, 4%, 67%);
+  font-size: 1.5rem;
+}
+
+.profiles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profiles .review {
+  font-family: "barlow", sans-serif;
+  margin: auto;
+  color: hsl(232deg, 10%, 55%);
+  line-height: 1.4rem;
+  max-width: 80%;
+}
+.profiles .author {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.profiles img {
+  margin: auto;
+  border-radius: 50%;
 }
 
 footer .attribution {
