@@ -214,9 +214,12 @@ h1 {
 }
 
 //edits anchor tag underline on .standout only. Otherwise color would inherit #yellow
-.standout a {
+.standout {
+    margin-bottom: -12rem;
+    a {
     text-decoration-color: pink;
   }
+}
 
 .section-3{
     background-image: url("images/mobile/image-graphic-design.jpg");
@@ -240,7 +243,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 33rem;
+    min-height: 50rem;
     section{
         text-align: center;
     }
@@ -252,9 +255,34 @@ h1 {
     margin-top: 13rem;
 }
 
+.section-3-text, .section-4-text{
+    text-align: center;
+    margin-top: 22rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    h2{
+        font-size: 2rem;
+    }
+    p{
+        font-family: "barlow", sans-serif;
+        margin: 2rem;
+        font-size: .8rem;
+        line-height: 1.3rem;
+    }
+}
+
+.section-3-text{
+    color: $green;
+}
+
+.section-4-text{
+    color:$darkblue;
+}
+
+
 .testimonials{
-    margin-top: 26rem;
-    margin-bottom: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     text-align: center;
     h3{
         color: $lightgray;
@@ -327,11 +355,21 @@ footer{
     justify-content: center;
     align-items: center;
     background-color: $footer;
-      .attribution { font-size: 11px; text-align: center; }
+    font-family:"barlow", sans-serif;
+      .attribution { 
+        margin-top: .2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        line-height: 1.2rem;
+        font-size: 8px; 
+        text-align: center;
+        background-color: $footer; 
+        padding: 1.2rem;
+    }
       .attribution a { color: hsl(228, 45%, 44%); }
       height: 10rem;
       .logo{
-        margin-top: 3rem;
+        margin-top: 4rem;
       }
 }
 
