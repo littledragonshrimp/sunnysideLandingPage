@@ -299,8 +299,8 @@ h1 {
 
 .image-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  height: 50rem;
+  grid-template-areas: ".milk" ".orange" ".cone" ".sugar";
+  height: 40rem;
   width: 100%;
 }
 
@@ -335,17 +335,19 @@ footer {
   align-items: center;
   background-color: #8ed0c4;
   font-family: "barlow", sans-serif;
+  margin-top: -20rem;
+  min-height: 20rem;
   height: 10rem;
 }
 footer .attribution {
   margin-top: 0.2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
   line-height: 1.2rem;
   font-size: 8px;
   text-align: center;
   background-color: #8ed0c4;
   padding: 1.2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 footer .attribution a {
   color: hsl(228deg, 45%, 44%);
