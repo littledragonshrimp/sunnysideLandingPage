@@ -19,7 +19,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-body ::-webkit-scrollbar,
 body .nav-links {
   display: none; /* for Chrome, Safari, and Opera */
 }
@@ -373,4 +372,94 @@ footer .logo {
 .footer-links a:hover, .social-links a:hover {
   color: white;
   transition: 0.5s;
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    background-image: url("images/desktop/image-header.jpg");
+  }
+  .transform-img {
+    background-image: url("images/desktop/image-transform.jpg");
+  }
+  .standout-img {
+    background-image: url("images/desktop/image-stand-out.jpg");
+  }
+  .milk {
+    background-image: url("images/desktop/image-gallery-milkbottles.jpg");
+  }
+  .orange {
+    background-image: url("images/desktop/image-gallery-orange.jpg");
+  }
+  .cone {
+    background-image: url("images/desktop/image-gallery-cone.jpg");
+  }
+  .sugar {
+    background-image: url("images/desktop/image-gallery-sugarcubes.jpg");
+  }
+  .fa-bars, .nav-links.shown {
+    display: none;
+  }
+  .nav-links {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .nav-links a {
+    color: white;
+    font-family: "barlow", sans-serif;
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    gap: 2.6rem;
+    justify-content: space-evenly;
+    margin-right: 2.8rem;
+  }
+  .image-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  main .transform {
+    flex-direction: row-reverse;
+  }
+  main .transform section, main .standout section {
+    text-align: left;
+    padding: 8rem 9rem;
+    height: 20rem;
+  }
+  main .standout {
+    flex-direction: row;
+    margin-top: -2rem;
+  }
+  main .transform-img, main .standout-img {
+    min-height: 100%;
+    min-width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+  main .graphic-and-photography {
+    flex-direction: row;
+    margin-top: -3rem;
+  }
+  main .section-4 {
+    margin-top: 13rem;
+  }
+  main .testimonials, main .profiles {
+    flex-direction: row;
+  }
+  main .testimonials p, main .profiles p {
+    font-size: 0.9rem;
+  }
+  main .testimonials .author-job, main .profiles .author-job {
+    font-size: 0.6rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
