@@ -430,17 +430,21 @@ a:hover{
         display: none;
     }
 
-    .nav-links{
-        position: relative;
+    body .nav-links{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        position: relative;
-         a {
+    
+        a{
             color: white;
-            font-family: "barlow",sans-serif;
-          }
+            font-size: .8rem;
+        }
+        .contact{
+            background-color: $container;
+            color: $darkestblue;
+            border-radius: 2rem
+        }
     }
 
     .links{

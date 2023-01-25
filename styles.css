@@ -399,17 +399,20 @@ footer .logo {
   .fa-bars, .nav-links.shown {
     display: none;
   }
-  .nav-links {
-    position: relative;
+  body .nav-links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: relative;
   }
-  .nav-links a {
+  body .nav-links a {
     color: white;
-    font-family: "barlow", sans-serif;
+    font-size: 0.8rem;
+  }
+  body .nav-links .contact {
+    background-color: #fffbf8;
+    color: hsl(212deg, 27%, 19%);
+    border-radius: 2rem;
   }
   .links {
     display: flex;
