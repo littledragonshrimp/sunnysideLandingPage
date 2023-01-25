@@ -451,8 +451,9 @@ a:hover{
         margin-right: 2.8rem;
     }
 
-    .image-grid{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    .image-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 2fr;
     }
 
     main{
@@ -467,7 +468,6 @@ a:hover{
       .transform section, .standout section{
         text-align: left;
         padding: 8rem 9rem;
-        height: 20rem;
       }
       .standout{
         flex-direction: row;
@@ -487,17 +487,36 @@ a:hover{
        .section-4{
         margin-top: 13rem;
        }
+       .testimonials{
+        width: 80%;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+       }
        .testimonials, .profiles{
         flex-direction: row;
         p{
-            font-size: .9rem;
+            font-size: .8rem;
+        }
+        h3{
+            margin-bottom: 2rem;
         }
         .author-job{
             font-size: .6rem;
         }
+
        }
+       .section-3, .section-4 img{
+       background-position: center;
+       }
+       //end main section adjustments
     }
+        //footer section
+       .social-links,.footer-links{
+        max-width: 20%;
+       }
+    
     }
+    
     
  
 
